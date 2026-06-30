@@ -2,8 +2,8 @@ import pytest
 
 
 class Calc:
-    # 이 곳에 코드를 작성
-    pass
+    def get_Minus(self, a,b):
+        return a -b
 
 
 # 테스트 케이스 작성
