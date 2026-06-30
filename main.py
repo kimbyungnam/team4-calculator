@@ -6,13 +6,15 @@ class Calc:
     def getZegop(self, a):
         return a * a
 
-    pass
+    def getMinus(self, a,b):
+        return a -b
 
 
 # 테스트 케이스 작성
 def test_sample():
     assert 1 == 1
-    pytest.fail()
+    assert Calc().getMinus(1,2) ==-1
+    
 
 def test_getZegop():
     sut = Calc()
