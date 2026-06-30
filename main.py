@@ -2,11 +2,14 @@ import pytest
 
 
 class Calc:
-    # 이 곳에 코드를 작성
-    pass
+    def getGop(self,a,b):
+        return a*b
 
 
-# 테스트 케이스 작성
-def test_sample():
-    assert 1 == 1
-    pytest.fail()
+def test_getGop():
+    # arrange
+    sut = Calc()
+
+    ret = sut.getGop(3,2)
+
+    assert ret == 6
