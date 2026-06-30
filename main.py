@@ -20,7 +20,7 @@ class Calc:
     def getSumSum(self, a, b, c):
         return a + b + c
 
-
+# 테스트 케이스 작성
 def test_getGop():
     # arrange
     sut = Calc()
@@ -47,18 +47,8 @@ def test_getSumSum():
     assert calc.getSumSum(1, 2, 3) == 6
     assert calc.getSumSum(0, 0, 0) == 0
     assert calc.getSumSum(-1, 2, -3) == -2
-    
-    def getSum(self, a, b):
-        return a + b
-
-    def getZegop(self, a):
-        return a * a
-
-    def getMinus(self, a,b):
-        return a -b
 
 
-# 테스트 케이스 작성
 def test_getMinus():
     sut = Calc()
     
