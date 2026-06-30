@@ -9,9 +9,5 @@ class Calc:
 # 테스트 케이스 작성
 def test_sample():
     assert 1 == 1
-    pytest.fail()
+    assert Calc().getMinus(1,2) ==-1
 
-def test_minus():
-    calc = Calc()
-    ret = calc.getMinus(1,2)
-    assert ret == -1
