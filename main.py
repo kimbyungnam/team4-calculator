@@ -2,7 +2,7 @@ import pytest
 
 
 class Calc:
-    def get_Minus(self, a,b):
+    def getMinus(self, a,b):
         return a -b
 
 
@@ -10,3 +10,8 @@ class Calc:
 def test_sample():
     assert 1 == 1
     pytest.fail()
+
+def test_minus():
+    calc = Calc()
+    ret = calc.getMinus(1,2)
+    assert ret == -1
